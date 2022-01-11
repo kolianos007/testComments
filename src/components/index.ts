@@ -1,0 +1,6 @@
+export {default as Avatar} from './Avatar/Avatar'
+export {default as Button} from './Button/Button'
+export {default as CommentForm} from './CommentForm/CommentForm'
+export {default as CommentPost} from './CommentPost/CommentPost'
+export {default as SendComment} from './SendComment/SendComment'
+export {default as BlockComments} from './BlockComments/BlockComments'

@@ -1,0 +1,131 @@
+.App
+  background: #F6F8FC
+  font-family: "Inter"
+
+.container
+  max-width: 1184px
+  width: 100%
+  margin: 0 auto
+  background: #fff
+  padding: 48px 88px
+
+.avatar-wrapper
+  margin-right: 32px
+  & img
+    width: 100%
+    height: 100%
+    border-radius: 8px
+
+.send-comment
+  display: flex
+  padding-bottom: 32px
+  margin-bottom: 32px
+  position: relative
+  &::after
+    content: ''
+    width: 100%
+    height: 1px
+    background: #cdd7e5
+    position: absolute
+    bottom: 0
+
+form
+  flex-grow: 1
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+
+textarea
+  background: #FCFDFF
+  border: 1px solid #cdd7e5
+  box-sizing: border-box
+  border-radius: 4px
+  padding: 16px 24px
+  font-size: 22px
+  line-height: 28px
+  font-family: "Inter"
+  width: 100%
+  height: 120px
+  margin-bottom: 16px
+  resize: none
+
+textarea::placeholder
+  color: #929bad
+
+button
+  font-family: "Inter"
+  background: none
+  border: none
+  cursor: pointer
+
+.button-styled
+  margin: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 15.5px 40px
+  width: 168px
+  height: 56px
+  border-radius: 3px
+  background: #3ebf8a
+  color: #fff
+  font-weight: 500
+  font-size: 20px
+  line-height: 28px
+
+.comment-post
+  margin-bottom: 48px
+  &.reply
+    margin-left: 152px
+    margin-top: 40px
+  &__wrapper
+    display: flex
+  &__info
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    flex-grow: 1
+    >div>span
+      margin-right: 16px
+  &__name
+    font-size: 24px
+    line-height: 29px
+    font-weight: 600
+  &__date,  &__author
+    font-size: 18px
+    line-height: 22px
+    color: #697082
+  &__text
+    margin: 16px 0 23px
+    font-size: 22px
+    line-height: 30px
+    width: 100%
+    color: #131831
+    input
+      width: 100%
+      padding: 0 5px
+      box-sizing: border-box
+      font-size: 22px
+      line-height: 30px
+  &__buttons button
+    font-size: 18px
+    line-height: 22px
+    color: #697082
+    padding: 0
+    margin-right: 24px
+
+.reply
+  &-form
+    width: 100%
+    margin-top: 26px
+  &-bar
+    display: flex
+    justify-content: space-between
+    font-size: 18px
+    line-height: 22px
+    color: #697082
+    padding: 0
+    span
+      margin-bottom: 10px
+    span:last-child
+      cursor: pointer
